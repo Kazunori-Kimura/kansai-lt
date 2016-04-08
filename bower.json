@@ -1,0 +1,20 @@
+{
+  "name": "kansai-lt",
+  "description": "PE-BANK関西支店の有志でライトニングトーク会をやりましょう。",
+  "main": "index.js",
+  "authors": [
+    "Kazunori Kimura <kazunori.kimura.js@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Honoka": "^3.3.6"
+  }
+}

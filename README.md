@@ -44,3 +44,8 @@ LT後、軽くディスカッション (10分くらい) して
 回が進んで、収拾がつかなくなったらテーマを設けるかもしれません。
 
 <br><br>
+
+
+* [reveal.js](https://github.com/hakimel/reveal.js)
+  - [reveal.js で markdown を使う（2015年3月版） | Qiita](http://qiita.com/qt6hy/items/a8213db72462c1c46ae9#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+* [Honoka | Bootstrapのカスタムテーマ](http://honokak.osaka/)

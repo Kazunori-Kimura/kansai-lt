@@ -1,12 +1,29 @@
 {
   "name": "kansai-lt",
   "version": "1.0.0",
-  "description": "",
+  "description": "PE-BANK関西支店の有志でライトニングトーク会をやりましょう。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Kazunori Kimura <kazunori.kimura.js@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "ect": "^0.5.9",
+    "ejs": "^2.4.1",
+    "fs-extra-promise": "^0.3.1",
+    "glob-promise": "^1.0.6",
+    "yaml-front-matter": "^3.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazunori-Kimura/kansai-lt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kazunori-Kimura/kansai-lt/issues"
+  },
+  "homepage": "https://github.com/Kazunori-Kimura/kansai-lt#readme"
 }
