@@ -39,6 +39,11 @@ co(function* (){
             const dist = path.resolve(PUBLIC_DIR, SLIDE_DIR, htmlFileName);
             yield fs.outputFileAsync(dist, slideData, "utf8");
             console.log(`${dist} created.`);
+        } else {
+            // そのままファイルコピー
+            const dist = path.resolve(PUBLIC_DIR, SLIDE_DIR, files[i]);
+            yield fs.copyAsync(file, dist);
+            console.log(`${dist} copied.`);
         }
     }
     
@@ -46,7 +51,7 @@ co(function* (){
     slides.sort(function(a, b) {
         return a.date > b.date ? 1 : -1;
     });
-    // ejsでhtml生成
+    // ectでhtml生成
     const indexData = renderer.render('index.ect', { slides });
     const dist = path.resolve(PUBLIC_DIR, "index.html");
     yield fs.outputFileAsync(dist, indexData, "utf8");
