@@ -96,5 +96,6 @@ bower_components
 .bower-registry
 .bower-tmp
 
-# publicフォルダ
-public
+# public directory
+
+./public
