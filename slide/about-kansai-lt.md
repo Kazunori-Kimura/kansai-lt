@@ -53,6 +53,23 @@ K1342 木村 憲規
 
 ---
 
+## GitHub のレポジトリ
+
+https://github.com/Kazunori-Kimura/kansai-lt
+
+* ここに情報を集めていきたい
+* 要望があれば GitHub Organization に移行
+
+---
+
+## Facebookグループ
+
+開催の案内はこちら -> 
+
+ディスカッションはこちら -> 
+
+---
+
 ## LTしてくれる人募集！
 
 * お名前とLTのタイトルを連絡ください
@@ -71,3 +88,12 @@ K1342 木村 憲規
 
 * LT会後に懇親会を実施予定です！
   - 参加費3,000円
+
+---
+
+## ありがとうございました！
+
+* Twitter: 
+* Facebook: 
+* GitHub: https://github.com/Kazunori-Kimura
+* Qiita: http://qiita.com/Kazunori-Kimura
