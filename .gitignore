@@ -28,7 +28,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -95,4 +96,5 @@ bower_components
 .bower-registry
 .bower-tmp
 
-
+# publicフォルダ
+public

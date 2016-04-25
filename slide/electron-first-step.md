@@ -22,7 +22,7 @@ K1342 木村 憲規
 
 ---
 
-## Electronでアプリ作ってみた
+## Electronでアプリ作ってみた (1)
 
 Webアプリケーションのログを解析するツール
 
@@ -41,6 +41,26 @@ Webアプリケーションのログを解析するツール
 
 ---
 
+## Electronでアプリ作ってみた (2)
+
+*electron-viz* : Graphvizのエディタ/ビューア
+
+![electron-viz](./images/electron-viz.jpg)
+
+https://github.com/Kazunori-Kimura/electron-viz
+
+---
+
+## ツールの構成
+
+* 画面
+  - *jQuery* と *Bootstrap3*
+* ロジック
+  - *viz.js*
+  - *CodeMirror*
+
+---
+
 ## 良さ
 
 * まさしく *desktop apps with web technologies*
@@ -54,8 +74,7 @@ Webアプリケーションのログを解析するツール
 * 画面側の処理とバックエンドの処理が混じりそう
   - スパゲッティ不可避（かも）
 * Windows向けにビルドすると dllファイル多数
-  - 大したアプリじゃないのに結構なファイルサイズ
-  - Mac向けのビルドは知らん
+  - Mac向けだと .app にまとめられるけど、ファイルサイズは大きい
 
 ---
 
