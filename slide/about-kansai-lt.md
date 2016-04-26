@@ -1,5 +1,5 @@
 ---
-theme: "sky"
+theme: "night"
 title: "ライトニングトーク会やります！"
 date: "2016-05-28" 
 ---
@@ -58,7 +58,7 @@ K1342 木村 憲規
 https://github.com/Kazunori-Kimura/kansai-lt
 
 * ここに情報を集めていきたい
-* 要望があれば GitHub Organization に移行
+* 要望があれば GitHub Organization に移行します
 
 ---
 
@@ -67,6 +67,17 @@ https://github.com/Kazunori-Kimura/kansai-lt
 開催の案内はこちら -> 
 
 ディスカッションはこちら -> 
+
+---
+
+## Slackチーム
+
+* Slack: チャットツール
+  - 関西LT: 
+  - 参加はこちらから ->
+
+herokuのアプリなので、眠ってる場合あります。
+その場合は `F5` 押して再読み込み
 
 ---
 
@@ -81,6 +92,8 @@ https://github.com/Kazunori-Kimura/kansai-lt
 
 * こんな話が聞きたい！
 * こういうことやりたい！
+
+FacebookやSlackに投稿すると、誰かリアクションするかも
 
 ---
 

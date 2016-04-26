@@ -34,12 +34,13 @@ K1342 木村 憲規
 
 ## そんなことより
 
-* JavaScriptでサーバー処理が書ける！
+* JavaScriptがブラウザから解放される
 
 ---
 
 ## npm
 
+* Node Package Manager
 * 他言語と比べてダントツのパッケージ数
 
 ![モジュール数の比較](./images/modulecounts.png)
