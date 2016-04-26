@@ -82,3 +82,14 @@ https://github.com/Kazunori-Kimura/electron-viz
 
 * 近日開催予定！
   - Electronも取り上げたい
+
+---
+
+## ありがとうございました！
+
+http://kazunori-kimura.github.io/
+
+* Twitter: @KazunoriJs
+* Facebook: facebook.com/kazunori.kimura.311
+* GitHub: https://github.com/Kazunori-Kimura
+* Qiita: http://qiita.com/Kazunori-Kimura

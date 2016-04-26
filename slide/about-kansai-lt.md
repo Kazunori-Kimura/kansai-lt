@@ -93,7 +93,9 @@ https://github.com/Kazunori-Kimura/kansai-lt
 
 ## ありがとうございました！
 
-* Twitter: 
-* Facebook: 
+http://kazunori-kimura.github.io/
+
+* Twitter: @KazunoriJs
+* Facebook: facebook.com/kazunori.kimura.311
 * GitHub: https://github.com/Kazunori-Kimura
 * Qiita: http://qiita.com/Kazunori-Kimura
