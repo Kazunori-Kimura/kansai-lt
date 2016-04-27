@@ -1,9 +1,9 @@
 ---
 theme: "solarized"
-title: "Graphvizの紹介とelectron-viz"
+title: "Graphvizとelectron-vizの紹介"
 date: "2016-05-28" 
 ---
-# Graphvizの紹介とelectron-viz
+# Graphvizとelectron-vizの紹介
 
 K1342 木村 憲規
 
@@ -46,6 +46,24 @@ dotファイルを Graphviz で SVG に変換した例:
 
 ---
 
+### (Sample) Gitのcommit履歴
+
+![git](./images/sample2.svg)
+
+---
+
+### (Sample) データ構造
+
+![データ構造](./images/sample-datastructure.svg)
+
+---
+
+### (Sample) UNIX変遷
+
+![unix](./images/sample-unix.svg)
+
+---
+
 ### SVGって？
 
 > Scalable Vector Graphics（スケーラブル・ベクター・グラフィックス、SVG）は、XMLをベースとした、2次元ベクターイメージ用の画像形式の1つである。  
@@ -72,9 +90,21 @@ $ dot -Tsvg sample.dot -o sample.svg
 
 ## electron-viz
 
-https://github.com/Kazunori-Kimura/electron-viz
+https://github.com/Kazunori-Kimura/electron-viz/releases
 
 ![electron-viz](./images/electron-viz.jpg)
+
+---
+
+## メリット
+
+* dotをリアルタイムにsvgに変換
+* Graphvizのインストール不要 (viz.jsを使用)
+* windows/mac対応
+
+https://github.com/Kazunori-Kimura/electron-viz
+
+不具合など見つけたらissue登録ください
 
 ---
 
