@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Node.jsのススメ</title>
+    <title>Graphvizとelectron-vizの紹介</title>
     <link rel="stylesheet" href="../reveal.js-3.2.0/css/reveal.css">
-    <link rel="stylesheet" href="../reveal.js-3.2.0/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js-3.2.0/css/theme/solarized.css" id="theme">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="../reveal.js-3.2.0/lib/css/zenburn.css">
@@ -22,90 +22,108 @@
                 
                 <script type="text/template">
                 
-# Node.jsのススメ
+# Graphvizとelectron-vizの紹介
 
 K1342 木村 憲規
 
 ---
 
-## Node.jsとは？
+## Graphviz
 
-* [nodejs.org](https://nodejs.org/en/)
-  - `event-driven`
-  - `non-blocking I/O model`
+> Graphviz（Graph Visualization Software）は AT&T研究所が開発したオープンソースのツールパッケージであり、DOT言語のスクリプトで示されたグラフを描画する。パッケージにはアプリケーションソフトウェアからツールを使うためのライブラリも含まれる。Graphviz は Eclipse Public License ライセンスで提供されるフリーソフトウェアである。  
+> [Graphviz | Wikipedia](https://ja.wikipedia.org/wiki/Graphviz)
 
----
-
-## C10K問題
-
-* Apacheなどで採用されているマルチスレッドモデルの難点
-  - スレッド毎のメモリ領域の圧迫
-  - ロック制御など処理の複雑化
-  - I/O待ち
+http://www.graphviz.org/
 
 ---
 
-## Node.jsは
+## 何が出来るの？
 
-* `event-driven` と `non-blocking I/O model` でサーバーリソースの効率的使用とI/O待ちの低減を実現
+様々なグラフが書けます
 
----
-
-## そんなことより
-
-* JavaScriptがブラウザから解放される
+* 「chart」でなく「graph」
+  - フローチャートや家系図など
 
 ---
 
-## npm
+### 例 (sample.dot)
 
-* Node Package Manager
-* 他言語と比べてダントツのパッケージ数
-
-![モジュール数の比較](./images/modulecounts.png)
-
-> http://www.modulecounts.com/
-
----
-
-## コマンドラインツールの導入/作成も簡単
-
-* 拙作 `node-gi` (コマンドラインで .gitignore を作成) をインストールする
-
-```sh
-> npm install -g node-gi
+```
+digraph graphname {
+  a -> b -> c;
+  b -> d;
+}
 ```
 
 ---
 
-## フロントエンド開発では不可欠
+### 例 (sample.svg)
 
-* gulp, grunt
-* babel, TypeScript
-* SASS, SCSS
-* minify
-* WebPack, browserify
+dotファイルを Graphviz で SVG に変換した例:
+
+![sample](./images/sample.svg)
 
 ---
 
-## 様々なツール
+### (Sample) Gitのcommit履歴
 
-* *Apache Cordova* : HTMLとJavaScriptでスマフォアプリ開発
-* *Electron* : HTMLとJavaScriptでデスクトップアプリ開発
-
----
-
-## NodeSchool
-
-* Node.jsについて勉強するNode.jsのツール
-  - [NodeSchool](http://nodeschool.io/ja/index.html)
+![git](./images/sample2.svg)
 
 ---
 
-## JavaScript研究会
+### (Sample) データ構造
 
-* 近日開催予定！
-  - 初回は Node.js のセットアップと NodeSchool を予定
+![データ構造](./images/sample-datastructure.svg)
+
+---
+
+### (Sample) UNIX変遷
+
+![unix](./images/sample-unix.svg)
+
+---
+
+### SVGって？
+
+> Scalable Vector Graphics（スケーラブル・ベクター・グラフィックス、SVG）は、XMLをベースとした、2次元ベクターイメージ用の画像形式の1つである。  
+> [SVG | Wikipedia](https://ja.wikipedia.org/wiki/Scalable_Vector_Graphics)
+
+---
+
+## Graphvizの使い方
+
+CLI (コマンドラインインターフェース) で操作します。
+
+```sh
+$ dot -Tsvg sample.dot -o sample.svg
+```
+
+---
+
+### CLIだと不便
+
+* dot書く -> CLIで変換 -> 結果確認
+  - リアルタイムプレビューが欲しい
+
+---
+
+## electron-viz
+
+https://github.com/Kazunori-Kimura/electron-viz/releases
+
+![electron-viz](./images/electron-viz.jpg)
+
+---
+
+## メリット
+
+* dotをリアルタイムにsvgに変換
+* Graphvizのインストール不要 (viz.jsを使用)
+* windows/mac対応
+
+https://github.com/Kazunori-Kimura/electron-viz
+
+不具合など見つけたらissue登録ください
 
 ---
 
