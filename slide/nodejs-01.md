@@ -40,10 +40,19 @@ K1342 木村 憲規
 
 ## どのバージョンを使えばよい？
 
-* メジャーバージョンが偶数のやつが *LTS*
+* メジャーバージョンが偶数のやつが *LTS* (Long Term Support)
   - 2016/04/27 に v6.0.0 リリース
   - お仕事で使用するなら v4.4.3 -> 2018/04/01 までサポート
   - 2016/10/01 から v6 が *LTS* -> 2019/04/01 までサポート
+
+---
+
+## 導入方法
+
+ごりごりバージョンが上がっていくので、バージョン管理ツールの使用をおすすめ
+
+* Windows: [nodist](https://github.com/marcelklehr/nodist)
+* Mac: [nodebrew](https://github.com/hokaccha/nodebrew)
 
 ---
 
