@@ -64,7 +64,7 @@ https://github.com/Kazunori-Kimura/electron-viz
 ## 良さ
 
 * まさしく *desktop apps with web technologies*
-  - コード書いてて楽しい！
+  - コード書いてて楽しい
 * javascript/node.jsの資産がそのまま使える
 
 ---
@@ -75,13 +75,6 @@ https://github.com/Kazunori-Kimura/electron-viz
   - スパゲッティ不可避（かも）
 * Windows向けにビルドすると dllファイル多数
   - Mac向けだと .app にまとめられるけど、ファイルサイズは大きい
-
----
-
-## JavaScript研究会
-
-* 近日開催予定！
-  - Electronも取り上げたい
 
 ---
 

@@ -111,8 +111,8 @@ K1342 木村 憲規
 
 ## JavaScript研究会
 
-* 近日開催予定！
-  - 初回は Node.js のセットアップと NodeSchool を予定
+* 近いうちに開催したいなぁ
+  - 初回は Node.js のセットアップと NodeSchool かな
 
 ---
 
