@@ -75,7 +75,7 @@ PE-BANKのマイページでも案内します
 
 * Slack: チャットツール
   - 関西LT: https://kansai-lt.slack.com
-  - 参加はこちらから -> 
+  - 参加はこちらから -> https://kansai-lt.herokuapp.com/
 
 herokuのアプリなので、眠ってる場合があります。  
 その場合は `F5` 押して再読み込みしてください。
