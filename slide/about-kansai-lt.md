@@ -54,31 +54,13 @@ K1342 木村 憲規
 
 ---
 
-## GitHub のレポジトリ
-
-https://github.com/Kazunori-Kimura/kansai-lt
-
-* ここに情報を集めていきたい
-* 要望があれば GitHub Organization に移行します
-
----
-
 ## Facebookグループ
 
-開催の案内はこちら -> https://www.facebook.com/groups/android.geekers.japan/
+PE-BANK関西 ライトニングトーク会 https://www.facebook.com/groups/933033476805566/
+
+開催の案内はこちらでも行います -> PE-BANK関西 プロエンジニア会 https://www.facebook.com/groups/android.geekers.japan/
 
 PE-BANKのマイページでも案内します
-
----
-
-## Slackチーム
-
-* Slack: チャットツール
-  - 関西LT: https://kansai-lt.slack.com
-  - 参加はこちらから -> https://kansai-lt.herokuapp.com/
-
-herokuのアプリなので、眠ってる場合があります。  
-その場合は `F5` 押して再読み込みしてください。
 
 ---
 
@@ -95,7 +77,7 @@ herokuのアプリなので、眠ってる場合があります。
 * こんな話が聞きたい！
 * こういうことやりたい！
 
-FacebookやSlackに投稿すると、誰かリアクションするかも
+Facebookに投稿すると、誰かリアクションするかも
 
 ---
 

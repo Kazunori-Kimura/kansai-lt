@@ -4,6 +4,8 @@
   "description": "PE-BANK関西支店の有志でライトニングトーク会をやりましょう。",
   "main": "index.js",
   "scripts": {
+    "build": "node index.js",
+    "start": "hs ./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
