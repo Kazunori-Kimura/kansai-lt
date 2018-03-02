@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>flexible box (flexbox) is 何?</title>
+    <link rel="stylesheet" href="../reveal.js-3.2.0/css/reveal.css">
+    <link rel="stylesheet" href="../reveal.js-3.2.0/css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../reveal.js-3.2.0/lib/css/zenburn.css">
+</head>
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-markdown
+                data-separator="^\n---$"
+                data-separator-vertical="^\n>>>$">
+                
+                <script type="text/template">
+                
+
+# flexible box (flexbox) is 何?
+
+---
+
+> CSS3 Flexible Box (可変ボックス)、または flexbox は、ページレイアウトを様々なスクリーンサイズやディスプレイデバイスに適応しなければならない場合に、ページ上の要素が指定した通りに配置されるレイアウトモードです。多くのアプリケーションにおいて、flexible box モデルは、float を使わず、そして flex container のマージンがそのコンテンツのマージンを相殺することも無く、block モデルを超えるための手段を提供します。
+
+[CSS flexible box の利用 | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+
+---
+
+## どうして `flexbox` がよいの？
+
+---
+
+## これまでのレイアウト実装方法
+
+ブログなどでよくあるヘッダー、フッター、左右にメニュー、中央にコンテンツというレイアウトを作成するには...
+
+![3カラム](http://www.geocities.jp/multi_column/practice/img/3column_right.png)
+
+1. `table` タグを駆使する
+2. CSS の `float` を使用する
+3. `Bootstrap` を使用する
+
+---
+
+`flexbox` だとシンプルかつ柔軟なレイアウトを構築できる
+
+* サンプル: http://hashrock.github.io/flexbox-example/page4.html
+* ソースコード: https://github.com/hashrock/flexbox-example/blob/master/page4.html
+
+---
+
+## こんなシチュエーションで便利！
+
+* 不特定多数の項目を 縦 or 横 に並べる
+  - 画面サイズによって並べる方向を切り替える
+  - 等間隔に隙間を空ける
+* 複数要素の高さを揃える
+* 天地中央に要素を配置する
+
+---
+
+## 参考
+
+* [floatより辛くない「flexbox」でざっくりレイアウト](http://qiita.com/hashrock/items/939684b9207dbab1d59e)
+* [CSS Flexible Box Layout | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flexible_Box_Layout)
+                </script>
+                
+            </section>
+        </div>
+
+    </div>
+
+    <script src="../reveal.js-3.2.0/lib/js/head.min.js"></script>
+    <script src="../reveal.js-3.2.0/js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: '../reveal.js-3.2.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '../reveal.js-3.2.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../reveal.js-3.2.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../reveal.js-3.2.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '../reveal.js-3.2.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: '../reveal.js-3.2.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+
+</body>
+</html>
