@@ -6027,11 +6027,15 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 body {
-  padding-top: 40px; }
+  padding-top: 40px;
+  position: relative; }
 
-p, li {
+main p, main li {
   font-size: 1.2rem;
   line-height: 1.8; }
+
+nav#navbar-header {
+  background-color: #20c997; }
 
 section {
   padding: 30px 0; }

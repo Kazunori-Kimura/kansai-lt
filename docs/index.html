@@ -9,11 +9,16 @@
   <link rel="stylesheet" href="bundle.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-header" data-offset="70">
   <header>
-    <nav class="navbar navbar-dark bg-info fixed-top">
+    <nav class="navbar navbar-dark fixed-top" id="navbar-header">
       <div class="container">
         <a href="#" class="navbar-brand">Lightning Talks</a>
+        <div class="nav nav-pills mr-auto">
+          <a href="#speaker" class="nav-item nav-link">登壇者募集</a>
+          <a href="#about" class="nav-item nav-link">開催概要</a>
+          <a href="#access" class="nav-item nav-link">アクセス</a>
+        </div>
         <a href="https://anket.connpass.com/event/80933/" class="btn btn-outline-light" target="_blank">参加登録</a>
       </div>
     </nav>
@@ -49,8 +54,8 @@
           </div>
           <div class="col">
             <div class="tweets">
-              <a class="twitter-timeline" href="https://twitter.com/hashtag/LT%E5%A4%A7%E4%BC%9A" data-widget-id="969453884602171392">#LT大会 のツイート</a>
-              <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                <a class="twitter-timeline"  href="https://twitter.com/hashtag/LT%E5%A4%A7%E4%BC%9A" data-widget-id="969453884602171392">#LT大会 のツイート</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>    
             </div>
           </div>
         </div>
@@ -60,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>登壇者を募集しています！</h2>
+            <h2 id="speaker">登壇者を募集しています！</h2>
             <p>テーマは自由です。</p>
             <ul>
               <li>得意分野の最新情報</li>
@@ -137,7 +142,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>開催概要</h2>
+            <h2 id="about">開催概要</h2>
             <dl class="row">
               <dt class="col-sm-3">日時</dt>
               <dd class="col-sm-9">2018/03/17(土) 17:00-18:00</dd>
@@ -159,7 +164,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <h3>アクセス</h3>
+            <h3 id="access">アクセス</h3>
             <p>京阪本線/大阪市営堺筋線【北浜駅】より徒歩1分</p>
           </div>
           <div class="col">
@@ -179,6 +184,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="bundle.js"></script>
 </body>
 
 </html>
