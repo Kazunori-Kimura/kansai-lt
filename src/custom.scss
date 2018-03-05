@@ -1,0 +1,28 @@
+// Custom.scss
+// Include all of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  padding-top: 40px;
+}
+
+p, li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.tweets {
+  margin: 0 auto;
+  padding: 6px 10px;
+  border: 1px solid #999999;
+  border-radius: 6px;
+}
+
+.slide-thumbnail {
+  width: 16rem;
+  margin-top: 10px;
+}
