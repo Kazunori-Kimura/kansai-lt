@@ -5,6 +5,7 @@
 body {
   padding-top: 40px;
   position: relative;
+  color: #333;
 }
 
 main {
@@ -16,17 +17,32 @@ main {
 
 nav#navbar-header {
   background-color: $teal;
+
+  a.nav-item {
+    color: $white;
+  }
 }
 
 section {
   padding: 30px 0;
 }
 
-.tweets {
-  margin: 0 auto;
-  padding: 6px 10px;
-  border: 1px solid #999999;
-  border-radius: 6px;
+section#hero {
+  background-image: url(./hero-spring.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 160px 0;
+
+  h1 {
+    color: $teal;
+    text-shadow: 3px 3px 0 $white;
+  }
+  p {
+    color: $white;
+    text-shadow: 0 0 3px $black;
+  }
 }
 
 .slide-thumbnail {

@@ -10,10 +10,10 @@
     "build": "npm-run-all build:*",
     "build:sass": "node-sass src/custom.scss docs/bundle.css",
     "watch:sass": "node-sass -w src/custom.scss docs/bundle.css",
-    "build:js": "webpack src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode production",
-    "watch:js": "webpack -w src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode development",
+    "build:js": "webpack src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode=production",
+    "watch:js": "webpack -w src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode=development",
     "server": "browser-sync start --server \"docs\" --files \"docs/*\"",
-    "watch": "npm-run-all -p watch:* server"
+    "start": "npm-run-all -p watch:* server"
   },
   "repository": {
     "type": "git",
