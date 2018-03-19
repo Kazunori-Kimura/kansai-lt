@@ -7,11 +7,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "npm-run-all build:*",
-    "build:sass": "node-sass src/custom.scss docs/bundle.css",
-    "watch:sass": "node-sass -w src/custom.scss docs/bundle.css",
-    "build:js": "webpack src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode=production",
-    "watch:js": "webpack -w src/custom.js --output-path=\"./docs\" --output-filename=\"bundle.js\" --mode=development",
+    "build": "npm-run-all -p build:js build:css",
+    "build:css": "node-sass src/custom.scss docs/bundle.css",
+    "watch:css": "node-sass -w src/custom.scss docs/bundle.css",
+    "build:js": "npm-run-all build:webpack build:babel",
+    "build:babel": "babel tmp/bundle.js -o docs/bundle.js",
+    "watch:babel": "babel -w tmp/bundle.js -o docs/bundle.js",
+    "build:webpack": "webpack src/custom.js --output-path=\"./tmp\" --output-filename=\"bundle.js\" --mode=production",
+    "watch:webpack": "webpack -w src/custom.js --output-path=\"./tmp\" --output-filename=\"bundle.js\" --mode=development",
     "server": "browser-sync start --server \"docs\" --files \"docs/*\"",
     "start": "npm-run-all -p watch:* server"
   },
@@ -27,13 +30,16 @@
   },
   "homepage": "https://github.com/Kazunori-Kimura/kansai-lt#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "bootstrap": "^4.0.0",
     "browser-sync": "^2.23.6",
     "jquery": "^3.3.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.8.3",
     "npm-run-all": "^4.1.2",
-    "popper.js": "^1.12.9",
-    "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "popper.js": "^1.14.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
   }
 }
