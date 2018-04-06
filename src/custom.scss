@@ -64,20 +64,20 @@ section {
 }
 
 section#hero {
-  background-image: url(./hero-spring.jpg);
-  background-position: center center;
+  background-image: url(./https___www.pakutaso.com_shared_img_thumb_smoothieIMGL3707-min.jpg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 140px 0;
+  padding: 180px 0;
 
   h1 {
     color: $teal;
-    text-shadow: 3px 3px 0 $white;
+    text-shadow: 3px 3px 0 $black;
   }
   p {
-    color: $white;
-    text-shadow: 0 0 3px $black;
+    color: $teal;
+    text-shadow: 0 0 4px $black;
   }
 }
 
